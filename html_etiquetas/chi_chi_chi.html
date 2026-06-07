@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi chi chi</title>
+
+    <style>/* Apunto a un id entoces usamos # */ 
+        #wrapper {
+            background: darkgrey;
+        }
+        /* Apunto a una clase entonces uso . */
+        .text-blue {
+            color: blue;
+        }
+
+        /* Directo a la etiqueta */
+        h2 {
+            color: red;
+        }
+
+        .parpadeo {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <!--wrapper = envoltorio-->
+
+    <div id="wrapper">
+        <h3 class="text-blue">Chi chi chi</h3>
+        <h2>le le le</h2>
+        <h1 class="parpadeo" style="color: white;">!Viva Chile!</h1>
+    </div>
+
+    <hr>
+    <div id="control">
+        <h3 class="text-blue">Chi chi chi</h3>
+        <h2>le le le</h2>
+        <h1>!Viva Chile!</h1>
+    </div>
+
+
+
+</body>
+</html>
