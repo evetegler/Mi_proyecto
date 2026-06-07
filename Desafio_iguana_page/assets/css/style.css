@@ -1,3 +1,117 @@
-h1 {
-    color:aqua
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* TITULOS Y TEXTOS */
+
+h1,
+h2,
+p{
+    color: #ffffff;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+/* HEADER */
+
+header img{
+    width: 100%;
+    display: block;
+}
+
+/* DESCRIPCIÓN */
+
+.desc-section{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 120px;
+}
+
+.texto{
+    width: 40%;
+}
+
+.texto p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.imagen img{
+    width: 400px;
+    height: auto;
+}
+
+/* CARACTERÍSTICAS */
+
+.icons-section{
+    background-color: #1e1a13;
+    text-align: center;
+    padding: 70px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.iconos i{
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.iconos p{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* GALERÍA */
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 70px;
+}
+
+.galeria img{
+    width: 316px;
+    height: 202px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #1e1a13;
+    text-align: center;
+    padding: 35px;
+}
+
+.footer p{
+    font-size: 20px;
+    font-weight: 300;
 }
