@@ -1,0 +1,63 @@
+body{
+font-family: 'Open Sans', sans-serif;
+background-color: #f8f8f8;
+}
+
+.bg-pink{
+background-color: #e83e8c;
+}
+
+.logo-navbar{
+width: 132px;
+}
+
+.titulo{
+color: #707070;
+font-size: 60px;
+margin: 60px 0;
+}
+
+.card-title{
+font-weight: 700;
+}
+
+.card-text{
+font-weight: 400;
+}
+
+.icons-section{
+background-color: #17a2b8;
+padding: 60px 0;
+color: white;
+}
+
+.icons-section h2{
+font-size: 40px;
+font-weight: 700;
+}
+
+.icons-section i{
+font-size: 50px;
+margin-left: 15px;
+}
+
+footer{
+background-color: #e83e8c;
+text-align: center;
+padding: 40px;
+}
+
+footer img{
+width: 80px;
+}
+
+@media (max-width: 768px){
+
+```
+.titulo{
+    font-size: 45px;
+    margin: 30px 0;
+}
+```
+
+}
