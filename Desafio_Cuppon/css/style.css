@@ -1,0 +1,62 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #212529;
+}
+
+.navbar{
+    background-color: #28a745 !important;
+}
+
+.card{
+    border: 1px solid #dddddd;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 300;
+    color: #212529;
+}
+
+.empresa{
+    color: #707070;
+    font-size: 16px;
+}
+
+.direccion{
+    color: #707070;
+    font-size: 13px;
+}
+
+.card-footer{
+    border-top: 1px solid #dddddd;
+}
+
+.precio-antiguo{
+    color: #707070;
+    margin-right: 10px;
+}
+
+.precio-nuevo{
+    color: #28a745;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.bg-success{
+    background-color: #28a745 !important;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn-light{
+    width: 120px;
+}
+
+.footer-text{
+    color: #707070;
+    font-size: 16px;
+}
