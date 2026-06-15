@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Finales</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<h1>Notas Finales</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Ramo</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Promedio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HTML</td>
+            <td id="html1"></td>
+            <td id="html2"></td>
+            <td id="html3"></td>
+            <td id="promedioHTML"></td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td id="css1"></td>
+            <td id="css2"></td>
+            <td id="css3"></td>
+            <td id="promedioCSS"></td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td id="js1"></td>
+            <td id="js2"></td>
+            <td id="js3"></td>
+            <td id="promedioJS"></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    // HTML
+    let html1 = Number(prompt("Ingrese Nota 1 de HTML"));
+    let html2 = Number(prompt("Ingrese Nota 2 de HTML"));
+    let html3 = Number(prompt("Ingrese Nota 3 de HTML"));
+
+    let promedioHTML = ((html1 + html2 + html3) / 3).toFixed(1);
+
+    // CSS
+    let css1 = Number(prompt("Ingrese Nota 1 de CSS"));
+    let css2 = Number(prompt("Ingrese Nota 2 de CSS"));
+    let css3 = Number(prompt("Ingrese Nota 3 de CSS"));
+
+    let promedioCSS = ((css1 + css2 + css3) / 3).toFixed(1);
+
+    // JavaScript
+    let js1 = Number(prompt("Ingrese Nota 1 de JavaScript"));
+    let js2 = Number(prompt("Ingrese Nota 2 de JavaScript"));
+    let js3 = Number(prompt("Ingrese Nota 3 de JavaScript"));
+
+    let promedioJS = ((js1 + js2 + js3) / 3).toFixed(1);
+
+    // Mostrar HTML
+    document.getElementById("html1").textContent = html1;
+    document.getElementById("html2").textContent = html2;
+    document.getElementById("html3").textContent = html3;
+    document.getElementById("promedioHTML").textContent = promedioHTML;
+
+    // Mostrar CSS
+    document.getElementById("css1").textContent = css1;
+    document.getElementById("css2").textContent = css2;
+    document.getElementById("css3").textContent = css3;
+    document.getElementById("promedioCSS").textContent = promedioCSS;
+
+    // Mostrar JavaScript
+    document.getElementById("js1").textContent = js1;
+    document.getElementById("js2").textContent = js2;
+    document.getElementById("js3").textContent = js3;
+    document.getElementById("promedioJS").textContent = promedioJS;
+</script>
+```
+
+</body>
+</html>
+
