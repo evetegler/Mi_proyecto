@@ -1,0 +1,25 @@
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    color: #373a3c;
+    background-color: #fff;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+/* Bordes inferiores gris */
+hr {
+    border-top: 2px solid #dddddd;
+}
+
+/* Color texto títulos principales */
+.font-weight-bold {
+    color: #373a3c;
+}
