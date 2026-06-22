@@ -14,6 +14,81 @@
     
     <!-- Mi CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        /* Carousel Full Width */
+        .carousel-full {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            padding: 20px 0;
+        }
+        
+        /* Grid de 4 imágenes por slide */
+        .carousel-full .carousel-inner {
+            padding: 0 60px;
+        }
+        
+        .carousel-full .carousel-item .row {
+            margin: 0;
+        }
+        
+        .carousel-full .carousel-item .col-6 {
+            padding: 5px !important;
+        }
+        
+        .carousel-full .carousel-item .col-6 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        /* Indicadores */
+        .carousel-full .carousel-indicators {
+            bottom: -30px;
+        }
+        
+        .carousel-full .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background-color: #333;
+        }
+        
+        .carousel-full .carousel-indicators li.active {
+            background-color: #dc3545;
+        }
+        
+        /* Controles */
+        .carousel-full .carousel-control-prev,
+        .carousel-full .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            opacity: 1;
+        }
+        
+        .carousel-full .carousel-control-prev {
+            left: 10px;
+        }
+        
+        .carousel-full .carousel-control-next {
+            right: 10px;
+        }
+        
+        .carousel-full .carousel-control-prev:hover,
+        .carousel-full .carousel-control-next:hover {
+            background-color: rgba(0,0,0,0.7);
+        }
+    </style>
 </head>
 <body>
 
@@ -35,46 +110,16 @@
         </div>
     </nav>
 
-    <!-- ✅ IMAGEN PRINCIPAL GRANDE -->
-    <section class="imagen-principal">
-        <img src="assets/img/principal.jpg" alt="Pizza Principal" class="img-fluid w-100">
-    </section>
-
-    <!-- HEADER / CARRUSEL -->
-    <header class="container my-5">
-        <div class="row align-items-center">
-            <!-- Carrusel (desaparece en sm/xs) -->
-            <div class="col-md-6 d-none d-sm-none d-md-block">
-                <div id="carouselRicomida" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselRicomida" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselRicomida" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <!-- ITEM 1: 4 imágenes -->
-                        <div class="carousel-item active">
-                            <div class="row no-gutters">
-                                <div class="col-6 pr-1"><img src="assets/img/slider-1.png" class="d-block w-100" alt=""></div>
-                                <div class="col-6 pl-1"><img src="assets/img/slider-2.png" class="d-block w-100" alt=""></div>
-                                <div class="col-6 pr-1 mt-2"><img src="assets/img/slider-3.png" class="d-block w-100" alt=""></div>
-                                <div class="col-6 pl-1 mt-2"><img src="assets/img/slider-4.png" class="d-block w-100" alt=""></div>
-                            </div>
-                        </div>
-                        <!-- ITEM 2: 4 imágenes -->
-                        <div class="carousel-item">
-                            <div class="row no-gutters">
-                                <div class="col-6 pr-1"><img src="assets/img/slider-5.png" class="d-block w-100" alt=""></div>
-                                <div class="col-6 pl-1"><img src="assets/img/slider-6.png" class="d-block w-100" alt=""></div>
-                                <div class="col-6 pr-1 mt-2"><img src="assets/img/slider-7.png" class="d-block w-100" alt=""></div>
-                                <div class="col-6 pl-1 mt-2"><img src="assets/img/slider-8.png" class="d-block w-100" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- 1. GRID CON IMAGEN + TEXTO -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Imagen principal -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <img src="assets/img/principal.jpg" alt="pizza" class="img-fluid">
             </div>
             
             <!-- Texto receta -->
-            <div class="col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <h2 class="font-weight-bold">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h2>
                 <hr>
                 <p class="font-weight-bold">INGREDIENTES: Masa, Levadura, Agua, Sal, Aceite, Espinacas, Champiñones</p>
@@ -84,7 +129,66 @@
                 <button type="button" class="btn btn-outline-dark">Añadir a favoritos</button>
             </div>
         </div>
-    </header>
+    </section>
+
+    <hr class="container">
+
+    <!-- 2. CARRUSEL CON 4 CUADROS PEQUEÑOS POR SLIDE -->
+    <div id="carouselRicomida" class="carousel slide carousel-full" data-ride="carousel" data-interval="3000">
+        
+        <ol class="carousel-indicators">
+            <li data-target="#carouselRicomida" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselRicomida" data-slide-to="1"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+            <!-- SLIDE 1: 4 imágenes (1-4) -->
+            <div class="carousel-item active">
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-1.png" class="d-block w-100" alt="Slider 1">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-2.png" class="d-block w-100" alt="Slider 2">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-3.png" class="d-block w-100" alt="Slider 3">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-4.png" class="d-block w-100" alt="Slider 4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SLIDE 2: 4 imágenes (5-8) -->
+            <div class="carousel-item">
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-5.png" class="d-block w-100" alt="Slider 5">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-6.png" class="d-block w-100" alt="Slider 6">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-7.png" class="d-block w-100" alt="Slider 7">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="assets/img/slider-8.png" class="d-block w-100" alt="Slider 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles -->
+        <a class="carousel-control-prev" href="#carouselRicomida" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselRicomida" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
 
     <hr class="container">
 
@@ -162,6 +266,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    
+    <!-- Inicialización del carousel y botón -->
+    <script>
+        $(document).ready(function(){
+            // Carousel
+            $('#carouselRicomida').carousel({
+                interval: 3000,
+                pause: 'hover'
+            });
+            
+            // Botón enviar por correo
+            $('#enviarCorreo').click(function(){
+                alert('El correo fue enviado correctamente');
+            });
+        });
+    </script>
 </body>
 </html>
